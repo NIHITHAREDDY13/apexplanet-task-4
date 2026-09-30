@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasks | StudentHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                StudentHub
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="tasks.html" class="active">Tasks</a>
+
+                <a href="products.html">Products</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         TASK PAGE
+    ========================== -->
+
+    <main class="tasks-page">
+
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section class="page-hero">
+
+            <p class="section-label">
+                TASK MANAGER
+            </p>
+
+            <h1>
+                Stay organized.
+                <span>Get things done.</span>
+            </h1>
+
+            <p class="hero-description">
+                Create, manage and complete your tasks while keeping
+                everything organized in one place.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             ADD TASK SECTION
+        ========================== -->
+
+        <section class="task-create-section">
+
+            <p class="section-label">
+                ADD A NEW TASK
+            </p>
+
+            <h2>
+                Create a task
+            </h2>
+
+            <p class="section-description">
+                Add a task and manage it from your StudentHub dashboard.
+            </p>
+
+
+            <div class="task-input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    id="addTaskBtn"
+                >
+                    Add Task
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TASK LIST SECTION
+        ========================== -->
+
+        <section class="task-list-section">
+
+            <div class="task-list-header">
+
+                <div>
+
+                    <p class="section-label">
+                        YOUR TASKS
+                    </p>
+
+                    <h2>
+                        Task List
+                    </h2>
+
+                </div>
+
+
+                <div
+                    id="taskCount"
+                    class="task-count"
+                >
+                    0 Tasks
+                </div>
+
+            </div>
+
+
+            <!--
+                Tasks will be added here
+                automatically using tasks.js
+            -->
+
+            <div
+                id="taskList"
+                class="task-list"
+            >
+            </div>
+
+
+            <!-- Empty message -->
+
+            <div
+                id="emptyMessage"
+                class="empty-message"
+            >
+
+                <div class="empty-icon">
+                    📝
+                </div>
+
+                <h3>
+                    No tasks yet
+                </h3>
+
+                <p>
+                    Add your first task to get started.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BOTTOM CTA
+        ========================== -->
+
+        <section class="task-cta">
+
+            <div>
+
+                <p class="section-label">
+                    KEEP BUILDING
+                </p>
+
+                <h2>
+                    Small tasks lead to big progress.
+                </h2>
+
+                <p>
+                    Stay consistent, complete your tasks and
+                    keep moving forward.
+                </p>
+
+            </div>
+
+            <a
+                href="projects.html"
+                class="cta-button"
+            >
+                View Projects
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <h2>
+                StudentHub
+            </h2>
+
+            <p>
+                A student-focused web application built with
+                HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                © 2026 StudentHub. Built for ApexPlanet Internship.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="tasks.js"></script>
+
+</body>
+
+</html>
